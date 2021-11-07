@@ -3,7 +3,12 @@
     src: url(/font/KDA.ttf);
   }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
+    display: absolute;
     margin: 0;
     padding: 0;
     background: black;
@@ -12,14 +17,17 @@ body{
 .container{
     max-width: 1000px;
     margin: auto;
+
 }
 
 header{
+    position: sticky;
     font-family: KDA, sans-serif;
     color: rgb(201,191,249);
     font-size: 2vw;
     text-align: center;
     padding: 10px;
+    top: 0;
     background-color: rgb(22, 22, 22);
 }
 
@@ -37,11 +45,12 @@ section{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(25,67,58,0.4);
     color: #BBB2F7;
-    max-width: 250px;
+    max-width: 300px;
     float: right;
     padding: 20px;
     border-radius: 10px;
     border-top-right-radius: 100px;
+
 }
 
 .formContainer h2, .formContainer h6{
@@ -88,7 +97,6 @@ input[type="text"],[type="email"]{
     text-align: center;
     border-radius: 50px;
     padding: 5px;
-    box-sizing: border-box;
     color: white;
     
 }
@@ -147,13 +155,11 @@ li{
 footer{
     position: relative;
     font-size: 8px;
-    box-sizing: border-box;
 }
     
 footer img{
     float: left;
     width: 10vh;
-    box-sizing: border-box;
 }
 }
 
