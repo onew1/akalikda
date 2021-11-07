@@ -81,7 +81,7 @@ h2{
 footer{
     padding-left: 0;
     color: white;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 footer img{
@@ -89,11 +89,7 @@ footer img{
 }
 
 ul{
-    box-sizing: border-box;
-    padding-left: 35%;
-    padding-right: 35%;
-    color: black;
-    margin: auto;
+    text-align: center;
 }
 
 li{
