@@ -17,7 +17,7 @@ body{
 header{
     font-family: KDA, sans-serif;
     color: rgb(201,191,249);
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: center;
     padding: 10px;
     background-color: rgb(22, 22, 22);
@@ -34,6 +34,7 @@ section{
 }
 
 .formContainer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(25,67,58,0.4);
     color: #BBB2F7;
     max-width: 250px;
@@ -43,12 +44,12 @@ section{
     border-top-right-radius: 100px;
 }
 
-.formContainer h2, .formContainer h6, .formContainer p{
+.formContainer h2, .formContainer h6{
     display: inline-block;
 }
 
 h2{
-    font-size: 60px;
+    font-size: 3.5vw;
     padding: 0;
     margin: 0;
 }
@@ -57,7 +58,7 @@ h2{
     margin-top: 0;
 }
 
-.viewmore{
+.knowmore{
     color: rgb(65, 65, 65);
     background-color: #BBB2F7;
     border-style: none;
@@ -66,34 +67,62 @@ h2{
     border-color: #5559CF;
     border-radius: 5px;
     width: 100%;
-    box-sizing: border-box;
     padding: 10px;
     font-family: KDA, sans-serif;
     font-size: 16px;
 }
 
-.viewmore:hover{
+.knowmore:hover{
     color: black;
     background-color: #5559CF;
     cursor: pointer;
 }
 
 footer{
-    padding-left: 0;
-    color: white;
+    position: absolute;
+    color: rgb(151, 151, 151);
     font-size: 8px;
 }
 
 footer img{
-    width: 4%;
+    float: left;
+    width: 100px;
+    opacity: 80%;
 }
 
 ul{
     text-align: center;
+    padding: 0%;
 }
 
 li{
     display: inline-block;
     padding: 10px;
-    opacity: 0.5
+    opacity: 0.5;
 }
+
+@media screen and (max-width: 1000px) {
+
+
+.formContainer{
+    font-size: 12px;
+}
+
+footer{
+    position: relative;
+    font-size: 8px;
+    box-sizing: border-box;
+}
+    
+footer img{
+    float: left;
+    width: 10vh;
+    box-sizing: border-box;
+}
+}
+
+
+@media screen and (max-width: 800px) {
+    header{
+    font-size: 4vw;
+    }}
