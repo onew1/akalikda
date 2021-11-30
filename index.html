@@ -7,14 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K/DA ALL OUT</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/assets/akalikama.jpg">
-
+    <link rel="icon" href="assets/akalikama.jpg">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
     <div class="container">
         <header>K/DA AKALI OVERVIEW</header>
         <section>
+
+            <div class="popup" id="videoPopUp">
+                <i class='bx bx-x' id="close"></i>
+                <video class="videoIntro" id="video1" autoplay loop muted src="./assets/video/kdamoreakali.mp4"></video>
+                <div class="controls">
+                    <div id="play"><i class='bx bx-play-circle'></i></div>
+                    <div id="pause"><i class='bx bx-pause-circle'></i></div>
+                    <div id="volume"><i class='bx bx-volume-full'></i></div>
+                </div>
+                <button class="viewMore" onclick="location.href='https://www.youtube.com/watch?v=3VTkBuxU4yk';">WATCH NOW</button>
+            </div>
+
             <div class="formContainer">
                 <h2>AKALI</h2>
                 <h6>아칼리</h6>
@@ -39,7 +52,8 @@
             </div>
             </p>
         </section>
-        <footer><img src="/assets/kdalogo.png">
+        <button class="pvBtn" id="previewBtn">PREVIEW</button>
+        <footer><img src="./assets/kdalogo.png">
             <p>
                 ™ & © 2021 Riot Games, Inc. League of Legends and all related logos,
                 characters, names and distinctive likenesses thereof are exclusive property of Riot Games, Inc. All
@@ -48,11 +62,13 @@
         </footer>
 
         <ul>
-            <li class="ig"> <a href="https://www.instagram.com/kda_music/"><img src="/assets/social/insta.png"></a></li>
-            <li class="twt"> <a href="https://twitter.com/kda_music"><img src="/assets/social/twitter.png"></a></li>
+            <li class="ig"> <a href="https://www.instagram.com/kda_music/"><img src="./assets/social/insta.png"></a></li>
+            <li class="twt"> <a href="https://twitter.com/kda_music"><img src="./assets/social/twitter.png"></a></li>
         </ul>
     </div>
-
+    
+    <script src="./script.js">
+    </script>
 </body>
 
 </html>
