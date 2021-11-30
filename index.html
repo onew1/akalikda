@@ -19,8 +19,8 @@
 
             <div class="popup" id="videoPopUp">
                 <i class='bx bx-x' id="close"></i>
-                <video class="videoIntro" id="video1" autoplay loop muted src="./assets/video/kdamoreakali.mp4"></video>
-                <div class="controls">
+                <video class="videoIntro" id="video1" onmouseover="aparecer(this)" onmouseout="esconder(this)" autoplay loop muted src="./assets/video/kdamoreakali.mp4"></video>
+                <div class="controls" onmouseover="aparecer(this)" id="videoControls">
                     <div id="play"><i class='bx bx-play-circle'></i></div>
                     <div id="pause"><i class='bx bx-pause-circle'></i></div>
                     <div id="volume"><i class='bx bx-volume-full'></i></div>

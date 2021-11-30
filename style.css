@@ -165,25 +165,20 @@ li {
 }
 
 .controls {
-    position: absolute;
-  display: none;
+  position: absolute;
   text-align: left;
-left: 0;
-top: 0;
-transform: translateX(170%) translateY(130%);
+  left: 0;
+  top: 0;
+  transform: translateX(170%) translateY(130%);
   z-index: 1000;
   cursor: pointer;
 }
-
-.controls:hover {
-  display: block;
-}
-
 .bx-play-circle {
   background: rgba(224, 224, 224, 0.219);
   border-radius: 50%;
   font-size: 40px;
 }
+
 .bx-x {
   color: rgb(202, 202, 202);
   font-size: 40px;
@@ -204,14 +199,6 @@ transform: translateX(170%) translateY(130%);
   background: rgba(224, 224, 224, 0.219);
   border-radius: 50%;
   font-size: 40px;
-}
-
-.videoIntro:hover + .controls {
-  display: block;
-}
-
-.videoIntro:after ~ .controls {
-  display: none;
 }
 
 .videoIntro {
